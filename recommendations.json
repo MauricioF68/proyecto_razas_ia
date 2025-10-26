@@ -1,0 +1,734 @@
+{
+  "n02085620-Chihuahua": {
+    "nombre_comun": "Chihuahua",
+    "temperamento": "Vivaz, devoto, valiente. A menudo se apega a una sola persona.",
+    "ejercicio": "Bajo. Paseos cortos diarios son suficientes.",
+    "cuidado": "Bajo mantenimiento. El de pelo corto necesita cepillado ocasional; el de pelo largo, 2-3 veces por semana."
+  },
+  "n02085782-Japanese_spaniel": {
+    "nombre_comun": "Chin Japonés",
+    "temperamento": "Juguetón, leal, inteligente y de buenos modales. Es un perro faldero ideal.",
+    "ejercicio": "Bajo. Le basta con jugar dentro de casa y paseos cortos.",
+    "cuidado": "Medio. Su pelaje largo necesita cepillado 2-3 veces por semana para evitar enredos."
+  },
+  "n02085936-Maltese_dog": {
+    "nombre_comun": "Bichón Maltés",
+    "temperamento": "Juguetón, encantador, adaptable. No le gusta quedarse solo por mucho tiempo.",
+    "ejercicio": "Bajo. Paseos diarios o juegos en interiores son suficientes.",
+    "cuidado": "Alto. Su pelaje blanco y largo no suelta pelo, pero necesita cepillado diario para evitar nudos y limpieza regular de lágrimas."
+  },
+  "n02086079-Pekinese": {
+    "nombre_comun": "Pekinés",
+    "temperamento": "Afectuoso, leal, regio y muy independiente. Es valiente, pero no agresivo.",
+    "ejercicio": "Bajo. Un paseo corto es todo lo que necesita.",
+    "cuidado": "Alto. Su doble pelaje requiere un cepillado profundo varias veces por semana."
+  },
+  "n02086240-Shih-Tzu": {
+    "nombre_comun": "Shih-Tzu",
+    "temperamento": "Amistoso, extrovertido, juguetón y encantador.",
+    "ejercicio": "Bajo. Paseos cortos y juegos en casa son ideales.",
+    "cuidado": "Alto. Su pelaje largo y lujoso necesita cepillado diario."
+  },
+  "n02086646-Blenheim_spaniel": {
+    "nombre_comun": "Blenheim Spaniel (Cavalier King Charles)",
+    "temperamento": "Afectuoso, paciente, ansioso por complacer. Es un perro de compañía ideal.",
+    "ejercicio": "Medio. Paseos diarios con correa y juegos en el patio son suficientes.",
+    "cuidado": "Medio. Su pelaje sedoso de longitud media necesita cepillado regular (2-3 veces por semana)."
+  },
+  "n02086910-papillon": {
+    "nombre_comun": "Papillon",
+    "temperamento": "Alegre, alerta, inteligente. Es un perro faldero robusto y enérgico que se destaca en los deportes caninos.",
+    "ejercicio": "Medio. Aunque es pequeño, es activo. Necesita caminatas diarias y juegos interactivos.",
+    "cuidado": "Medio. Su pelaje largo y sedoso no tiene capa interna, por lo que un cepillado 2-3 veces por semana es suficiente."
+  },
+  "n02087046-toy_terrier": {
+    "nombre_comun": "Toy Terrier Inglés",
+    "temperamento": "Alerta, enérgico, leal. Un pequeño terrier con una gran personalidad, reservado con extraños.",
+    "ejercicio": "Medio. Necesita caminatas diarias y tiempo de juego para quemar energía.",
+    "cuidado": "Bajo. Su pelaje corto y denso es muy fácil de cuidar."
+  },
+  "n02087394-Rhodesian_ridgeback": {
+    "nombre_comun": "Rhodesian Ridgeback",
+    "temperamento": "Digno, independiente, afectuoso con la familia. Reservado con extraños. Tiene un fuerte instinto de presa.",
+    "ejercicio": "Alto. Requiere ejercicio diario vigoroso como trotar o correr en un área segura y cercada.",
+    "cuidado": "Bajo. Su pelaje corto y brillante es muy fácil de mantener."
+  },
+  "n02088094-Afghan_hound": {
+    "nombre_comun": "Galgo Afgano",
+    "temperamento": "Digno, independiente, dulce pero distante. Conocido por su elegancia y naturaleza regia.",
+    "ejercicio": "Alto. Necesita correr a diario en un área grande y cercada. No se debe confiar en él sin correa.",
+    "cuidado": "Muy Alto. Su pelaje largo y sedoso requiere varias horas de cepillado a la semana para evitar enredos severos."
+  },
+  "n02088238-basset": {
+    "nombre_comun": "Basset Hound",
+    "temperamento": "Encantador, paciente, de baja energía, pero terco. Se guía por su olfato.",
+    "ejercicio": "Bajo. Una caminata diaria a paso moderado es suficiente. Propenso a la obesidad.",
+    "cuidado": "Medio. Su pelaje corto es fácil de cuidar, pero sus largas orejas deben limpiarse semanalmente. Babea mucho."
+  },
+  "n02088364-beagle": {
+    "nombre_comun": "Beagle",
+    "temperamento": "Alegre, curioso, amigable. Su nariz gobierna su cerebro, lo que lo hace terco y propenso a deambular.",
+    "ejercicio": "Alto. Requiere al menos una hora de ejercicio al día. Necesita estar con correa o en un patio cercado.",
+    "cuidado": "Bajo. Su pelaje corto es denso y fácil de cuidar. Muda moderadamente."
+  },
+  "n02088466-bloodhound": {
+    "nombre_comun": "Bloodhound (Perro de San Huberto)",
+    "temperamento": "Afectuoso, terco, inquisitivo. Famoso por su increíble sentido del olfato. Es gentil pero implacable siguiendo un rastro.",
+    "ejercicio": "Muy Alto. Requiere un mínimo de dos horas de ejercicio diario, con mucho espacio para olfatear. Necesita un patio seguro.",
+    "cuidado": "Alto. Sus arrugas faciales y largas orejas deben limpiarse a diario. Babea mucho."
+  },
+  "n02088632-bluetick": {
+    "nombre_comun": "Bluetick Coonhound",
+    "temperamento": "Inteligente, devoto, tenaz. Un perro de caza que puede ser un compañero desafiante debido a su instinto de presa y su aullido.",
+    "ejercicio": "Alto. Necesita al menos una hora de ejercicio vigoroso al día. Se distrae fácilmente con olores.",
+    "cuidado": "Bajo. Su pelaje corto es fácil de cuidar. Requiere limpieza regular de oídos."
+  },
+  "n02089078-black-and-tan_coonhound": {
+    "nombre_comun": "Coonhound Negro y Fuego",
+    "temperamento": "Amistoso, sociable, terco. Es un perro rastreador de aroma que se deja llevar por su nariz. Tiene un aullido fuerte.",
+    "ejercicio": "Alto. Necesita más de 40 minutos de ejercicio diario, preferiblemente largas caminatas donde pueda olfatear.",
+    "cuidado": "Medio. Su pelaje corto es fácil de cepillar, pero sus largas orejas deben limpiarse semanalmente para prevenir infecciones. Babea."
+  },
+  "n02089867-Walker_hound": {
+    "nombre_comun": "Treeing Walker Coonhound",
+    "temperamento": "Inteligente, valiente, enérgico. Es un perro de caza veloz y competitivo que ama a su familia.",
+    "ejercicio": "Alto. Necesita largas caminatas diarias o la oportunidad de correr en un área segura. Se guía por el olfato.",
+    "cuidado": "Bajo. Su pelaje corto y brillante necesita un cepillado mínimo."
+  },
+  "n02089973-English_foxhound": {
+    "nombre_comun": "Foxhound Inglés",
+    "temperamento": "Sociable, tolerante, obstinado. Criado para cazar en jauría, se lleva excelentemente con otros perros y personas.",
+    "ejercicio": "Muy Alto. Requiere horas de ejercicio diario, preferiblemente corriendo. No es apto para apartamentos.",
+    "cuidado": "Bajo. Su pelaje corto es fácil de cuidar con un cepillado semanal."
+  },
+  "n02090379-redbone": {
+    "nombre_comun": "Redbone Coonhound",
+    "temperamento": "Amistoso, ansioso por complacer, enérgico. Un perro de caza que también es un compañero familiar relajado en interiores.",
+    "ejercicio": "Alto. Necesita una larga caminata o sesión de juego vigorosa todos los días.",
+    "cuidado": "Bajo. Su pelaje corto necesita un cepillado semanal."
+  },
+  "n02090622-borzoi": {
+    "nombre_comun": "Borzoi (Galgo Ruso)",
+    "temperamento": "Calmado, afectuoso, independiente. Un gato en el mundo de los perros: regio y tranquilo en interiores, pero un corredor veloz al aire libre.",
+    "ejercicio": "Medio. Necesita una carrera diaria a toda velocidad en un área grande y cercada, pero es un teleadicto en casa.",
+    "cuidado": "Medio. Su pelaje largo y sedoso necesita cepillado varias veces por semana."
+  },
+  "n02090721-Irish_wolfhound": {
+    "nombre_comun": "Lobero Irlandés",
+    "temperamento": "Gentil, tranquilo, digno. Es un gigante gentil, sorprendentemente tranquilo en interiores.",
+    "ejercicio": "Medio. Como adulto, disfruta de largas caminatas o carreras en un área cercada. No es un perro de alta energía, pero necesita espacio.",
+    "cuidado": "Medio. Su pelaje áspero necesita un cepillado semanal para eliminar el pelo muerto."
+  },
+  "n02091032-Italian_greyhound": {
+    "nombre_comun": "Galgos Italiano",
+    "temperamento": "Juguetón, sensible, afectuoso. Es un perro faldero que ama la comodidad, pero también disfruta de carreras cortas y rápidas.",
+    "ejercicio": "Medio. Necesita caminatas diarias con correa y oportunidades para correr a toda velocidad en un área segura y cercada.",
+    "cuidado": "Bajo. Su pelaje corto es muy fácil de cuidar. Es sensible al frío y necesita abrigo."
+  },
+  "n02091134-whippet": {
+    "nombre_comun": "Whippet",
+    "temperamento": "Afectuoso, juguetón, tranquilo. Son corredores veloces al aire libre, pero perros muy tranquilos y amantes del sofá en interiores.",
+    "ejercicio": "Medio. Necesita algunas carreras a fondo en un patio cercado todos los días, pero por lo demás es tranquilo.",
+    "cuidado": "Bajo. Su pelaje corto necesita un aseo mínimo."
+  },
+  "n02091244-Ibizan_hound": {
+    "nombre_comun": "Podenco Ibicenco",
+    "temperamento": "Uniforme, leal, payaso. Es un perro de caza elegante que es educado en casa pero juguetón con su familia.",
+    "ejercicio": "Alto. Requiere correr diariamente en un área cercada (con vallas altas, ya que son grandes saltadores).",
+    "cuidado": "Bajo. Su pelaje (liso o de alambre) es fácil de cuidar."
+  },
+  "n02091467-Norwegian_elkhound": {
+    "nombre_comun": "Elkhound Noruego",
+    "temperamento": "Audaz, enérgico, protector. Un perro de caza vikingo que es un guardián leal pero independiente y ruidoso.",
+    "ejercicio": "Alto. Necesita al menos una hora de ejercicio vigoroso al día. Tiene una gran resistencia.",
+    "cuidado": "Medio. Su grueso doble pelaje necesita un cepillado profundo semanal. Muda mucho estacionalmente."
+  },
+  "n02091635-otterhound": {
+    "nombre_comun": "Otterhound",
+    "temperamento": "Amable, exuberante, amigable. Es un perro grande y ruidoso con un amor por el agua y el barro.",
+    "ejercicio": "Alto. Necesita mucho ejercicio, especialmente nadar.",
+    "cuidado": "Alto. Su pelaje áspero e impermeable requiere cepillado semanal y es propenso a ensuciarse. Limpieza de oídos regular."
+  },
+  "n02091831-Saluki": {
+    "nombre_comun": "Saluki",
+    "temperamento": "Gentil, digno, independiente. Uno de los perros más antiguos, es un corredor veloz que es reservado con extraños.",
+    "ejercicio": "Alto. Necesita oportunidades para correr a toda velocidad en un área grande y cercada.",
+    "cuidado": "Medio. El pelaje es corto, pero las plumas en las orejas y la cola necesitan cepillado."
+  },
+  "n02092002-Scottish_deerhound": {
+    "nombre_comun": "Lebrel Escocés (Deerhound)",
+    "temperamento": "Digno, gentil, educado. Es un gigante amable que es tranquilo en casa pero tiene un fuerte instinto de presa.",
+    "ejercicio": "Alto. Necesita correr libremente en un área grande y cercada, además de largas caminatas.",
+    "cuidado": "Medio. Su pelaje áspero necesita cepillado semanal."
+  },
+  "n02092339-Weimaraner": {
+    "nombre_comun": "Weimaraner",
+    "temperamento": "Intrépido, amigable, obediente. Conocido como el Fantasma Gris, es un perro de caza enérgico que necesita estar cerca de su gente.",
+    "ejercicio": "Muy Alto. Requiere ejercicio vigoroso y estimulación mental todos los días. Propenso a la ansiedad por separación.",
+    "cuidado": "Bajo. Su pelaje corto y elegante es muy fácil de cuidar."
+  },
+  "n02093256-Staffordshire_bullterrier": {
+    "nombre_comun": "Staffordshire Bull Terrier",
+    "temperamento": "Inteligente, valiente, afectuoso. Conocido por ser un perro de familia leal y bueno con los niños.",
+    "ejercicio": "Medio. Paseos diarios y sesiones de juego vigorosas son suficientes.",
+    "cuidado": "Bajo. Su pelaje corto es fácil de cuidar."
+  },
+  "n02093428-American_Staffordshire_terrier": {
+    "nombre_comun": "American Staffordshire Terrier",
+    "temperamento": "Confiado, inteligente, de buen carácter. Es un perro leal y orientado a la gente.",
+    "ejercicio": "Alto. Necesita ejercicio diario vigoroso y estimulación mental. Disfruta del entrenamiento.",
+    "cuidado": "Bajo. Su pelaje corto requiere un cepillado mínimo."
+  },
+  "n02093647-Bedlington_terrier": {
+    "nombre_comun": "Bedlington Terrier",
+    "temperamento": "Gentil, encantador, juguetón. Parece un cordero, pero tiene el corazón de un terrier enérgico.",
+    "ejercicio": "Medio. Disfruta de caminatas y juegos. Es un corredor rápido.",
+    "cuidado": "Alto. Su pelaje rizado no muda, pero requiere recortes profesionales regulares y cepillado semanal."
+  },
+  "n02093754-Border_terrier": {
+    "nombre_comun": "Border Terrier",
+    "temperamento": "Afectuoso, alegre, testarudo. Un pequeño terrier rústico con un gran impulso de presa.",
+    "ejercicio": "Alto. Necesita caminatas diarias y tiempo de juego. Le encanta explorar y cavar.",
+    "cuidado": "Medio. Su pelaje de alambre requiere cepillado semanal y stripping (arrancado manual del pelo) un par de veces al año."
+  },
+  "n02093859-Kerry_blue_terrier": {
+    "nombre_comun": "Kerry Blue Terrier",
+    "temperamento": "Inteligente, enérgico, alerta. Un perro de granja versátil que es un compañero familiar leal.",
+    "ejercicio": "Alto. Requiere ejercicio diario vigoroso y estimulación mental.",
+    "cuidado": "Alto. Su pelaje suave y ondulado no muda, pero necesita cepillado varias veces por semana y recortes cada 6-8 semanas."
+  },
+  "n02093991-Irish_terrier": {
+    "nombre_comun": "Terrier Irlandés",
+    "temperamento": "Audaz, fogoso, leal. Conocido por su pelaje rojo brillante y su personalidad valiente. Bueno con los niños.",
+    "ejercicio": "Alto. Necesita caminatas vigorosas y sesiones de juego diarias.",
+    "cuidado": "Medio. Su pelaje de alambre requiere cepillado semanal y stripping para mantener su textura."
+  },
+  "n02094114-Norfolk_terrier": {
+    "nombre_comun": "Norfolk Terrier",
+    "temperamento": "Valiente, curioso, afectuoso. Uno de los terriers más pequeños, es sociable y enérgico.",
+    "ejercicio": "Medio. Paseos diarios y juegos son suficientes.",
+    "cuidado": "Medio. Su pelaje de alambre necesita cepillado semanal."
+  },
+  "n02094258-Norwich_terrier": {
+    "nombre_comun": "Norwich Terrier",
+    "temperamento": "Valiente, leal, afectuoso. Similar al Norfolk, pero con las orejas erguidas. Un pequeño perro robusto.",
+    "ejercicio": "Medio. Paseos diarios y juegos son suficientes.",
+    "cuidado": "Medio. Su pelaje de alambre necesita cepillado semanal."
+  },
+  "n02094433-Yorkshire_terrier": {
+    "nombre_comun": "Yorkshire Terrier",
+    "temperamento": "Valiente, decidido, enérgico. Un terrier toy que es un gran perro guardián y un compañero afectuoso.",
+    "ejercicio": "Bajo. Paseos cortos diarios o juegos en interiores son suficientes.",
+    "cuidado": "Alto. Su pelaje largo y sedoso, similar al cabello humano, requiere cepillado diario o un recorte corto."
+  },
+  "n02095314-wire-haired_fox_terrier": {
+    "nombre_comun": "Fox Terrier de Pelo Duro",
+    "temperamento": "Alerta, enérgico, extrovertido. Un terrier clásico con una gran personalidad y mucho impulso de presa.",
+    "ejercicio": "Alto. Necesita mucho ejercicio vigoroso y tiempo de juego. Se aburre fácilmente.",
+    "cuidado": "Alto. Su pelaje de alambre necesita stripping manual para mantener la textura o recortes regulares."
+  },
+  "n02095570-Lakeland_terrier": {
+    "nombre_comun": "Lakeland Terrier",
+    "temperamento": "Amistoso, confiado, enérgico. Un terrier robusto con un sentido del humor travieso.",
+    "ejercicio": "Alto. Necesita caminatas diarias y juegos vigorosos.",
+    "cuidado": "Alto. Su pelaje de alambre necesita cepillado semanal y recortes o stripping regulares."
+  },
+  "n02095889-Sealyham_terrier": {
+    "nombre_comun": "Sealyham Terrier",
+    "temperamento": "Encantador, extrovertido, robusto. Un terrier pequeño pero fuerte, conocido por su pelaje blanco.",
+    "ejercicio": "Medio. Paseos diarios y sesiones de juego son suficientes.",
+    "cuidado": "Alto. Su pelaje largo y resistente a la intemperie necesita cepillado diario y recortes profesionales."
+  },
+  "n02096051-Airedale": {
+    "nombre_comun": "Airedale Terrier",
+    "temperamento": "Confiado, inteligente, enérgico. El Rey de los Terriers, es la raza de terrier más grande y versátil.",
+    "ejercicio": "Alto. Requiere ejercicio vigoroso diario, como trotar o juegos intensos. Necesita estimulación mental.",
+    "cuidado": "Alto. Su pelaje de alambre necesita cepillado semanal y recortes o stripping cada pocos meses."
+  },
+  "n02096177-cairn": {
+    "nombre_comun": "Cairn Terrier",
+    "temperamento": "Alegre, alerta, trabajador. El perro Toto de El Mago de Oz. Un pequeño terrier robusto y curioso.",
+    "ejercicio": "Medio. Paseos diarios y juegos son suficientes. Le encanta cavar.",
+    "cuidado": "Medio. Su pelaje de alambre desaliñado necesita cepillado semanal."
+  },
+  "n02096294-Australian_terrier": {
+    "nombre_comun": "Terrier Australiano",
+    "temperamento": "Enérgico, alerta, curioso. Un pequeño terrier robusto que es un excelente perro guardián.",
+    "ejercicio": "Medio. Paseos diarios y juegos vigorosos son suficientes.",
+    "cuidado": "Bajo. Su pelaje de alambre desaliñado solo necesita un cepillado semanal."
+  },
+  "n02096437-Dandie_Dinmont": {
+    "nombre_comun": "Dandie Dinmont Terrier",
+    "temperamento": "Independiente, inteligente, afectuoso. Conocido por su distintivo copete de pelo en la cabeza.",
+    "ejercicio": "Medio. Paseos diarios y sesiones de juego son suficientes.",
+    "cuidado": "Medio. Su pelaje requiere cepillado varias veces por semana y recortes regulares."
+  },
+  "n02096585-Boston_bull": {
+    "nombre_comun": "Boston Terrier",
+    "temperamento": "Amistoso, vivaz, inteligente. Conocido como el Caballero Americano por su esmoquin y su naturaleza gentil.",
+    "ejercicio": "Medio. Paseos diarios y juegos en interiores son suficientes. Propenso a sobrecalentarse.",
+    "cuidado": "Bajo. Su pelaje corto y elegante necesita un cepillado mínimo."
+  },
+  "n02097047-miniature_schnauzer": {
+    "nombre_comun": "Schnauzer Miniatura",
+    "temperamento": "Extrovertido, inteligente, amigable. Es un perro robusto, alerta y un excelente compañero familiar.",
+    "ejercicio": "Medio. Paseos diarios enérgicos y juegos son suficientes.",
+    "cuidado": "Alto. Su pelaje de alambre no muda, pero requiere cepillado varias veces por semana y recortes profesionales regulares."
+  },
+  "n02097130-giant_schnauzer": {
+    "nombre_comun": "Schnauzer Gigante",
+    "temperamento": "Leal, alerta, entrenable. Un perro de trabajo grande y poderoso que es un guardián devoto de su familia.",
+    "ejercicio": "Alto. Requiere ejercicio vigoroso diario y estimulación mental. Se aburre fácilmente.",
+    "cuidado": "Alto. Su pelaje de alambre necesita cepillado semanal y recortes regulares. Limpieza de barba necesaria."
+  },
+  "n02097209-standard_schnauzer": {
+    "nombre_comun": "Schnauzer Estándar",
+    "temperamento": "Inteligente, intrépido, enérgico. El prototipo de la raza, es un perro de granja versátil y un excelente guardián.",
+    "ejercicio": "Alto. Necesita caminatas enérgicas y juegos vigorosos todos los días.",
+    "cuidado": "Alto. Su pelaje de alambre necesita cepillado semanal y recortes regulares. Limpieza de barba necesaria."
+  },
+  "n02097298-Scotch_terrier": {
+    "nombre_comun": "Terrier Escocés",
+    "temperamento": "Independiente, confiado, enérgico. Tiene una personalidad audaz y un aspecto distintivo.",
+    "ejercicio": "Medio. Paseos diarios con correa y juegos son suficientes. Tiene un fuerte instinto de presa.",
+    "cuidado": "Alto. Su pelaje de alambre requiere cepillado semanal y recortes profesionales regulares."
+  },
+  "n02097474-Tibetan_terrier": {
+    "nombre_comun": "Terrier Tibetano",
+    "temperamento": "Afectuoso, sensible, inteligente. No es un verdadero terrier, sino un compañero y guardián de monasterio.",
+    "ejercicio": "Medio. Paseos diarios y juegos son suficientes.",
+    "cuidado": "Alto. Su largo doble pelaje requiere cepillado varias veces por semana para evitar enredos."
+  },
+  "n02097658-silky_terrier": {
+    "nombre_comun": "Silky Terrier",
+    "temperamento": "Juguetón, amigable, enérgico. Un terrier de tamaño juguete pero con un espíritu de terrier verdadero: valiente y alerta.",
+    "ejercicio": "Medio. Necesita caminatas diarias y sesiones de juego. Se adapta bien a la vida en apartamento si se ejercita.",
+    "cuidado": "Alto. Su pelaje largo y sedoso (similar al cabello humano) requiere cepillado diario o cada dos días."
+  },
+  "n02098105-soft-coated_wheaten_terrier": {
+    "nombre_comun": "Soft Coated Wheaten Terrier",
+    "temperamento": "Amistoso, alegre, devoto. Conocido por su saludo entusiasta y su pelaje suave y sedoso.",
+    "ejercicio": "Alto. Necesita ejercicio diario y tiempo de juego. Disfruta del entrenamiento.",
+    "cuidado": "Alto. Su pelaje que no muda requiere cepillado diario para prevenir enredos."
+  },
+  "n02098286-West_Highland_white_terrier": {
+    "nombre_comun": "West Highland White Terrier (Westie)",
+    "temperamento": "Confiado, alegre, entretenido. Un pequeño terrier robusto con una gran personalidad.",
+    "ejercicio": "Medio. Paseos diarios y sesiones de juego son suficientes.",
+    "cuidado": "Medio. Su pelaje de alambre blanco requiere cepillado semanal y recortes regulares."
+  },
+  "n02098413-Lhasa": {
+    "nombre_comun": "Lhasa Apso",
+    "temperamento": "Independiente, confiado, leal. Criado como perro guardián de palacio, es reservado con extraños pero juguetón con la familia.",
+    "ejercicio": "Medio. Paseos diarios y sesiones de juego en interiores son suficientes.",
+    "cuidado": "Alto. Su largo y lujoso pelaje requiere cepillado diario para evitar enredos o recortes profesionales regulares."
+  },
+  "n02099267-flat-coated_retriever": {
+    "nombre_comun": "Flat-Coated Retriever",
+    "temperamento": "Alegre, optimista, amigable. El Peter Pan del mundo canino, es un perro de caza eternamente juvenil.",
+    "ejercicio": "Alto. Requiere ejercicio vigoroso diario, como nadar y buscar objetos.",
+    "cuidado": "Medio. Su pelaje liso necesita cepillado semanal."
+  },
+  "n02099429-curly-coated_retriever": {
+    "nombre_comun": "Curly-Coated Retriever",
+    "temperamento": "Confiado, orgulloso, inteligente. El más alto de los retrievers, es un nadador excelente y un compañero leal.",
+    "ejercicio": "Alto. Necesita ejercicio vigoroso diario, especialmente nadar.",
+    "cuidado": "Bajo. Su pelaje rizado y apretado necesita un cuidado mínimo; el cepillado excesivo puede encresparlo."
+  },
+  "n02099601-golden_retriever": {
+    "nombre_comun": "Golden Retriever",
+    "temperamento": "Amistoso, inteligente, devoto. Es uno de los perros de familia más populares del mundo.",
+    "ejercicio": "Alto. Requiere ejercicio diario vigoroso (más de una hora) y le encanta nadar y buscar objetos.",
+    "cuidado": "Medio. Su denso doble pelaje muda mucho y requiere cepillado 1-2 veces por semana."
+  },
+  "n02099712-Labrador_retriever": {
+    "nombre_comun": "Labrador Retriever",
+    "temperamento": "Amistoso, activo, extrovertido. La raza más popular en muchos países, ideal para familias.",
+    "ejercicio": "Alto. Requiere mucho ejercicio, como nadar, buscar objetos y largas caminatas.",
+    "cuidado": "Medio. Su pelaje corto y denso muda mucho y necesita cepillado semanal."
+  },
+  "n02099849-Chesapeake_Bay_retriever": {
+    "nombre_comun": "Chesapeake Bay Retriever",
+    "temperamento": "Leal, afectuoso, protector. Un perro de agua duro y tenaz, más reservado que otros retrievers.",
+    "ejercicio": "Alto. Necesita ejercicio diario vigoroso, especialmente natación. Requiere entrenamiento.",
+    "cuidado": "Bajo. Su pelaje aceitoso y resistente al agua solo necesita cepillado semanal."
+  },
+  "n02100236-German_short-haired_pointer": {
+    "nombre_comun": "Braco Alemán de Pelo Corto",
+    "temperamento": "Amistoso, inteligente, ansioso por complacer. Un perro de caza versátil y un excelente compañero activo.",
+    "ejercicio": "Muy Alto. Requiere mucho ejercicio vigoroso y estimulación mental. Necesita correr.",
+    "cuidado": "Bajo. Su pelaje corto es muy fácil de cuidar."
+  },
+  "n02100583-vizsla": {
+    "nombre_comun": "Vizsla (Braco Húngaro)",
+    "temperamento": "Afectuoso, enérgico, gentil. Conocido como el perro de velcro porque se apega mucho a sus dueños.",
+    "ejercicio": "Alto. Necesita ejercicio vigoroso diario y no le gusta estar solo.",
+    "cuidado": "Bajo. Su pelaje corto y dorado-óxido es de muy bajo mantenimiento."
+  },
+  "n02100735-English_setter": {
+    "nombre_comun": "Setter Inglés",
+    "temperamento": "Amistoso, gentil, enérgico. Es un compañero de familia afectuoso pero necesita una salida para su energía de caza.",
+    "ejercicio": "Alto. Requiere largas caminatas, correr o sesiones de juego en un patio cercado todos los días.",
+    "cuidado": "Medio. Su pelaje largo y sedoso necesita cepillado 2-3 veces por semana para evitar enredos, especialmente en las plumas."
+  },
+  "n02100877-Irish_setter": {
+    "nombre_comun": "Setter Irlandés",
+    "temperamento": "Extrovertido, dulce, enérgico. Conocido por su impresionante pelaje rojo y su personalidad traviesa.",
+    "ejercicio": "Alto. Requiere mucho ejercicio vigoroso diario. Es un gran corredor.",
+    "cuidado": "Medio. Su pelaje sedoso necesita cepillado varias veces por semana para evitar enredos."
+  },
+  "n02101006-Gordon_setter": {
+    "nombre_comun": "Setter Gordon",
+    "temperamento": "Leal, confiado, afectuoso. El más pesado de los setters, es un perro de una sola persona, devoto de su familia.",
+    "ejercicio": "Alto. Requiere ejercicio vigoroso diario, pero es más tranquilo en casa que otros setters.",
+    "cuidado": "Medio. Su pelaje necesita cepillado 2-3 veces por semana."
+  },
+  "n02101388-Brittany_spaniel": {
+    "nombre_comun": "Spaniel Bretón",
+    "temperamento": "Enérgico, inteligente, ansioso por complacer. Un perro de caza compacto y un gran compañero de familia.",
+    "ejercicio": "Alto. Requiere mucho ejercicio diario y estimulación mental.",
+    "cuidado": "Bajo. Su pelaje es denso pero no requiere un aseo complicado, solo cepillado semanal."
+  },
+  "n02101556-clumber": {
+    "nombre_comun": "Clumber Spaniel",
+    "temperamento": "Calmado, leal, digno. El más pesado de los spaniels, es un perro de caza metódico y un compañero familiar tranquilo.",
+    "ejercicio": "Medio. Paseos diarios son suficientes. Le encanta nadar. Propenso a la obesidad.",
+    "cuidado": "Medio. Muda y babea. Su pelaje necesita cepillado varias veces por semana."
+  },
+  "n02102040-English_springer": {
+    "nombre_comun": "Springer Spaniel Inglés",
+    "temperamento": "Alegre, inteligente, ansioso por complacer. Son excelentes perros de familia y compañeros de actividades.",
+    "ejercicio": "Alto. Necesita al menos una hora de ejercicio vigoroso diario, como nadar, buscar la pelota o caminatas.",
+    "cuidado": "Medio. Requiere cepillado semanal y limpieza regular de oídos para prevenir infecciones."
+  },
+  "n02102177-Welsh_springer_spaniel": {
+    "nombre_comun": "Springer Spaniel Galés",
+    "temperamento": "Alegre, leal, reservado con extraños. Un perro de caza compacto y resistente que se apega mucho a su familia.",
+    "ejercicio": "Alto. Necesita ejercicio vigoroso diario.",
+    "cuidado": "Medio. Su pelaje necesita cepillado semanal."
+  },
+  "n02102318-cocker_spaniel": {
+    "nombre_comun": "Cocker Spaniel",
+    "temperamento": "Alegre, gentil, inteligente. Conocido por sus ojos expresivos y su cola siempre en movimiento.",
+    "ejercicio": "Medio. Paseos diarios enérgicos y tiempo de juego son suficientes.",
+    "cuidado": "Alto. Su pelaje sedoso necesita cepillado varias veces por semana y recortes profesionales. Limpieza de oídos crucial."
+  },
+  "n02102480-Sussex_spaniel": {
+    "nombre_comun": "Sussex Spaniel",
+    "temperamento": "Amistoso, tranquilo, leal. Único entre los spaniels por su ladrido grave y su naturaleza relajada en casa.",
+    "ejercicio": "Medio. Paseos diarios son suficientes. No es un perro de alta velocidad.",
+    "cuidado": "Medio. Su pelaje necesita cepillado varias veces por semana. Limpieza de oídos necesaria."
+  },
+  "n02102973-Irish_water_spaniel": {
+    "nombre_comun": "Spaniel de Agua Irlandés",
+    "temperamento": "Juguetón, curioso, inteligente. Es el payaso de la familia spaniel, pero puede ser reservado con extraños.",
+    "ejercicio": "Alto. Necesita mucho ejercicio, especialmente nadar, para estar feliz. Requiere estimulación mental.",
+    "cuidado": "Alto. Su pelaje rizado e hipoalergénico requiere cepillado varias veces por semana y recortes profesionales cada 6-8 semanas."
+  },
+  "n02104029-kuvasz": {
+    "nombre_comun": "Kuvasz",
+    "temperamento": "Leal, intrépido, independiente. Un antiguo guardián de ganado húngaro, es ferozmente protector de su familia.",
+    "ejercicio": "Medio. Paseos diarios y un patio cercado son suficientes. No es un perro de alta energía, pero necesita un trabajo.",
+    "cuidado": "Medio. Su pelaje blanco muda mucho estacionalmente y requiere cepillado semanal."
+  },
+  "n02104365-schipperke": {
+    "nombre_comun": "Schipperke",
+    "temperamento": "Confiado, curioso, enérgico. Un pequeño perro guardián belga conocido como el pequeño capitán",
+    "ejercicio": "Alto. Es un perro pequeño muy activo que necesita más que paseos cortos. Disfruta del entrenamiento.",
+    "cuidado": "Medio. Su pelaje muda mucho. Necesita cepillado semanal."
+  },
+  "n02105056-groenendael": {
+    "nombre_comun": "Pastor Belga Groenendael",
+    "temperamento": "Inteligente, protector, enérgico. Es una de las cuatro variedades de pastores belgas, devoto de su familia.",
+    "ejercicio": "Alto. Requiere ejercicio vigoroso y estimulación mental diaria. Necesita un trabajo.",
+    "cuidado": "Medio. Su largo pelaje negro necesita cepillado 2-3 veces por semana."
+  },
+  "n02105162-malinois": {
+    "nombre_comun": "Pastor Belga Malinois",
+    "temperamento": "Intenso, inteligente, protector. Es una raza de trabajo de élite que requiere un dueño experimentado.",
+    "ejercicio": "Muy Alto. Necesita al menos 2 horas de ejercicio vigoroso y entrenamiento mental diario. Necesita un trabajo.",
+    "cuidado": "Bajo. Su pelaje corto es fácil de cuidar, solo necesita cepillado semanal."
+  },
+  "n02105251-briard": {
+    "nombre_comun": "Pastor de Brie (Briard)",
+    "temperamento": "Leal, inteligente, protector. Un perro pastor francés con un gran corazón y una naturaleza independiente.",
+    "ejercicio": "Alto. Requiere ejercicio vigoroso diario y estimulación mental.",
+    "cuidado": "Alto. Su largo pelaje ondulado necesita cepillado varias veces por semana para evitar enredos."
+  },
+  "n02105412-kelpie": {
+    "nombre_comun": "Kelpie Australiano",
+    "temperamento": "Extremadamente inteligente, alerta, enérgico. Es un perro de trabajo incansable que necesita un trabajo que hacer.",
+    "ejercicio": "Muy Alto. Necesita horas de ejercicio físico y mental intenso todos los días. No es un perro de apartamento.",
+    "cuidado": "Bajo. Su pelaje corto y resistente a la intemperie solo necesita cepillado semanal."
+  },
+  "n02105508-komondor": {
+    "nombre_comun": "Komondor",
+    "temperamento": "Digno, valiente, leal. Un guardián de ganado húngaro conocido por su pelaje único en forma de rastas.",
+    "ejercicio": "Medio. Paseos diarios son suficientes, pero necesita un patio cercado para vigilar.",
+    "cuidado": "Muy Alto. Su pelaje en rastas nunca se cepilla, pero debe separarse a mano para evitar que se apelmace y debe secarse completamente después del baño (lo que puede llevar un día)."
+  },
+  "n02105641-Old_English_sheepdog": {
+    "nombre_comun": "Antiguo Pastor Inglés (Bobtail)",
+    "temperamento": "Adaptable, gentil, payaso. Un perro de pastoreo grande y peludo que ama a los niños.",
+    "ejercicio": "Alto. Requiere ejercicio diario vigoroso.",
+    "cuidado": "Muy Alto. Su abundante pelaje necesita varias horas de cepillado a la semana o un recorte profesional."
+  },
+  "n02105855-Shetland_sheepdog": {
+    "nombre_comun": "Pastor de Shetland (Sheltie)",
+    "temperamento": "Inteligente, juguetón, enérgico. Esencialmente un Collie en miniatura, es un gran perro de familia y alerta.",
+    "ejercicio": "Alto. Necesita ejercicio diario y se destaca en deportes caninos como la agilidad. Es un perro ruidoso (ladra).",
+    "cuidado": "Alto. Su hermoso doble pelaje muda mucho y requiere cepillado varias veces por semana."
+  },
+  "n02106030-collie": {
+    "nombre_comun": "Collie",
+    "temperamento": "Leal, inteligente, gentil. Famoso por Lassie, es un perro de pastoreo devoto y bueno con los niños.",
+    "ejercicio": "Medio. Paseos diarios y sesiones de juego son suficientes.",
+    "cuidado": "Alto (Pelo Largo) o Bajo (Pelo Corto). La variedad de pelo largo necesita cepillado semanal."
+  },
+  "n02106166-Border_collie": {
+    "nombre_comun": "Border Collie",
+    "temperamento": "Extremadamente inteligente, enérgico, trabajador. Considerada la raza más inteligente, necesita un trabajo mental.",
+    "ejercicio": "Muy Alto. Requiere ejercicio físico intenso y desafíos mentales diarios. No es un perro de apartamento.",
+    "cuidado": "Medio. Su pelaje necesita cepillado semanal."
+  },
+  "n02106382-Bouvier_des_Flandres": {
+    "nombre_comun": "Boyero de Flandes",
+    "temperamento": "Leal, valiente, trabajador. Un perro de granja versátil que es un excelente guardián de la familia.",
+    "ejercicio": "Alto. Necesita caminatas vigorosas o trotes diarios.",
+    "cuidado": "Alto. Su pelaje áspero no muda mucho, pero necesita cepillado semanal y recortes regulares."
+  },
+  "n02106550-Rottweiler": {
+    "nombre_comun": "Rottweiler",
+    "temperamento": "Leal, confiado, valiente. Un perro guardián natural que necesita socialización y entrenamiento firmes desde cachorro.",
+    "ejercicio": "Alto. Requiere al menos una hora de ejercicio diario y un trabajo (como entrenamiento de obediencia).",
+    "cuidado": "Bajo. Su pelaje corto requiere cepillado semanal."
+  },
+  "n02106662-German_shepherd": {
+    "nombre_comun": "Pastor Alemán",
+    "temperamento": "Confiado, valiente, inteligente. Un perro de trabajo versátil y un compañero familiar leal y protector.",
+    "ejercicio": "Alto. Requiere ejercicio vigoroso diario (más de 1 hora) y estimulación mental.",
+    "cuidado": "Medio. Muda mucho pelo. Requiere cepillado varias veces por semana."
+  },
+  "n02107142-Doberman": {
+    "nombre_comun": "Doberman Pinscher",
+    "temperamento": "Leal, intrépido, alerta. Es un excelente perro guardián que se apega profundamente a su familia.",
+    "ejercicio": "Alto. Necesita ejercicio vigoroso diario (correr, caminatas largas) y estimulación mental para evitar el aburrimiento.",
+    "cuidado": "Bajo. Su pelaje corto y elegante solo requiere un cepillado semanal."
+  },
+  "n02107312-miniature_pinscher": {
+    "nombre_comun": "Pinscher Miniatura",
+    "temperamento": "Valiente, enérgico, orgulloso. Conocido como el Rey de los Juguetes, tiene una personalidad de perro grande.",
+    "ejercicio": "Medio. Es activo en interiores, pero disfruta de paseos con correa.",
+    "cuidado": "Bajo. Su pelaje corto es muy fácil de cuidar."
+  },
+  "n02107574-Greater_Swiss_Mountain_dog": {
+    "nombre_comun": "Gran Boyero Suizo",
+    "temperamento": "Leal, protector, tranquilo. Es un perro de trabajo grande y poderoso, bueno con los niños.",
+    "ejercicio": "Medio. Necesita una caminata diaria. No es un perro de alta energía, pero disfruta de tareas como tirar de un carro.",
+    "cuidado": "Medio. Su pelaje corto y denso muda mucho estacionalmente."
+  },
+  "n02107683-Bernese_mountain_dog": {
+    "nombre_comun": "Boyero de Berna",
+    "temperamento": "Calmado, de buen carácter, paciente. Es un perro de familia leal y afectuoso, excelente con los niños.",
+    "ejercicio": "Medio. Necesita alrededor de 1 a 1.5 horas de ejercicio diario, como caminatas. No le va bien en climas cálidos.",
+    "cuidado": "Alto. Su grueso doble pelaje muda mucho pelo y requiere cepillado 2-3 veces por semana."
+  },
+  "n02107908-Appenzeller": {
+    "nombre_comun": "Appenzeller Sennenhund (Boyero de Appenzell)",
+    "temperamento": "Vivaz, confiado, atlético. Es un perro de trabajo versátil, excelente guardián y ágil.",
+    "ejercicio": "Alto. Requiere mucho ejercicio diario y estimulación mental.",
+    "cuidado": "Bajo. Su pelaje corto es fácil de cuidar."
+  },
+  "n02108000-EntleBucher": {
+    "nombre_comun": "Entlebucher Mountain Dog (Boyero de Entlebuch)",
+    "temperamento": "Entusiasta, inteligente, leal. Es un perro de trabajo determinado que necesita una tarea que hacer.",
+    "ejercicio": "Alto. Requiere al menos una hora de actividad diaria y estimulación mental. Se aburre fácilmente.",
+    "cuidado": "Bajo. Su pelaje corto y denso solo necesita un cepillado semanal."
+  },
+  "n02108089-boxer": {
+    "nombre_comun": "Bóxer",
+    "temperamento": "Juguetón, enérgico, leal. Un eterno cachorro que es un excelente perro de familia y guardián.",
+    "ejercicio": "Alto. Requiere mucho ejercicio diario y juegos interactivos.",
+    "cuidado": "Bajo. Su pelaje corto es fácil de cuidar, pero es sensible a temperaturas extremas."
+  },
+  "n02108422-bull_mastiff": {
+    "nombre_comun": "Bullmastiff",
+    "temperamento": "Valiente, afectuoso, leal. Es un guardián gentil que es devoto de su familia.",
+    "ejercicio": "Medio. Paseos diarios son suficientes. No es un perro de alta energía, pero es muy fuerte.",
+    "cuidado": "Bajo. Su pelaje corto es fácil de cuidar. Babea."
+  },
+  "n02108551-Tibetan_mastiff": {
+    "nombre_comun": "Mastín Tibetano",
+    "temperamento": "Independiente, protector, testarudo. Un antiguo guardián que es reservado con extraños y muy leal a su familia.",
+    "ejercicio": "Medio. Paseos diarios y un patio grande y seguro son necesarios. Más activo por la noche.",
+    "cuidado": "Medio. Muda su grueso doble pelaje una vez al año (explosión de pelaje)."
+  },
+  "n02108915-French_bulldog": {
+    "nombre_comun": "Bulldog Francés",
+    "temperamento": "Adaptable, juguetón, inteligente. Un perro de compañía encantador conocido por sus orejas de murciélago.",
+    "ejercicio": "Bajo. Paseos cortos diarios son suficientes. Propenso a sobrecalentarse; no debe hacer ejercicio en climas cálidos.",
+    "cuidado": "Bajo. Su pelaje corto es fácil de cuidar. Las arrugas faciales necesitan limpieza."
+  },
+  "n02109047-Great_Dane": {
+    "nombre_comun": "Gran Danés",
+    "temperamento": "Amistoso, paciente, dependiente. Conocido como el Apolo de los perros, es un gigante gentil que ama estar con su gente.",
+    "ejercicio": "Medio. Paseos diarios son importantes, especialmente para perros jóvenes. Crecimiento rápido, cuidado con las articulaciones.",
+    "cuidado": "Bajo. Su pelaje corto es fácil de cuidar, pero babea mucho."
+  },
+  "n02109525-Saint_Bernard": {
+    "nombre_comun": "San Bernardo",
+    "temperamento": "Gentil, paciente, amigable. Un gigante gentil famoso por su naturaleza tranquila y amorosa con los niños.",
+    "ejercicio": "Medio. Paseos diarios de hasta una hora son suficientes. No le va bien en climas cálidos.",
+    "cuidado": "Alto. Muda mucho pelo y babea. Requiere cepillado varias veces por semana."
+  },
+  "n02109961-Eskimo_dog": {
+    "nombre_comun": "Perro Esquimal Americano",
+    "temperamento": "Juguetón, inteligente, alerta. Un hermoso perro de compañía que es un excelente perro guardián.",
+    "ejercicio": "Alto. Requiere ejercicio diario y estimulación mental. Se destaca en el entrenamiento.",
+    "cuidado": "Alto. Su esponjoso pelaje blanco muda mucho y requiere cepillado varias veces por semana."
+  },
+  "n02110063-malamute": {
+    "nombre_comun": "Alaskan Malamute",
+    "temperamento": "Leal, juguetón, fuerte. Es un perro de trabajo poderoso que necesita un líder firme. No apto para dueños primerizos.",
+    "ejercicio": "Muy Alto. Necesita más de 2 horas de ejercicio intenso al día. No le va bien en climas cálidos.",
+    "cuidado": "Alto. Muda mucho pelo. Requiere cepillado varias veces por semana."
+  },
+  "n02110185-Siberian_husky": {
+    "nombre_comun": "Husky Siberiano",
+    "temperamento": "Extrovertido, amigable, travieso. Es un perro de trineo enérgico y sociable que ama a la gente y a otros perros.",
+    "ejercicio": "Alto. Requiere ejercicio vigoroso diario, como correr. Es un artista del escape.",
+    "cuidado": "Medio. Muda mucho estacionalmente (explosión de pelaje). Por lo demás, es limpio."
+  },
+  "n02110341-dalmatian": {
+    "nombre_comun": "Dálmata",
+    "temperamento": "Enérgico, juguetón, digno. Un perro de carruaje histórico que tiene una resistencia increíble.",
+    "ejercicio": "Alto. Requiere mucho ejercicio diario, como correr largas distancias.",
+    "cuidado": "Medio. Muda constantemente. Su pelaje corto necesita cepillado frecuente."
+  },
+  "n02110627-affenpinscher": {
+    "nombre_comun": "Affenpinscher",
+    "temperamento": "Confiado, curioso, entretenido. Un terrier toy conocido por su apariencia de mono y su personalidad cómica.",
+    "ejercicio": "Medio. Paseos diarios y juegos en interiores son suficientes.",
+    "cuidado": "Medio. Su pelaje de alambre desaliñado necesita cepillado semanal."
+  },
+  "n02110806-basenji": {
+    "nombre_comun": "Basenji",
+    "temperamento": "Independiente, inteligente, reservado. El perro sin ladrido de África, es limpio como un gato y muy testarudo.",
+    "ejercicio": "Alto. Necesita ejercicio diario vigoroso. Es un artista del escape.",
+    "cuidado": "Bajo. Se acicala a sí mismo. Muy poco olor a perro."
+  },
+  "n02110958-pug": {
+    "nombre_comun": "Pug",
+    "temperamento": "Encantador, travieso, afectuoso. Criado para ser un compañero, prospera con el contacto humano.",
+    "ejercicio": "Bajo. Necesita caminatas moderadas (30 min al día). Es propenso a sobrecalentarse; no debe hacer ejercicio en climas cálidos.",
+    "cuidado": "Alto. Muda mucho pelo. Las arrugas de su cara deben limpiarse a diario para prevenir infecciones."
+  },
+  "n02111129-Leonberg": {
+    "nombre_comun": "Leonberger",
+    "temperamento": "Amistoso, gentil, juguetón. Un perro de trabajo gigante que es un compañero familiar tranquilo y devoto.",
+    "ejercicio": "Medio. Paseos diarios y sesiones de juego son suficientes. Le encanta nadar.",
+    "cuidado": "Alto. Su grueso doble pelaje muda mucho y requiere cepillado diario."
+  },
+  "n02111277-Newfoundland": {
+    "nombre_comun": "Terranova",
+    "temperamento": "Dulce, paciente, devoto. Un gigante niñera conocido por su naturaleza gentil y su amor por los niños y el agua.",
+    "ejercicio": "Medio. Paseos diarios de media hora y natación son ideales.",
+    "cuidado": "Alto. Su grueso pelaje impermeable muda mucho y requiere cepillado varias veces por semana. Babea."
+  },
+  "n02111500-Great_Pyrenees": {
+    "nombre_comun": "Gran Pirineo",
+    "temperamento": "Calmado, paciente, inteligente. Un guardián de ganado majestuoso que es gentil con su familia pero protector.",
+    "ejercicio": "Medio. Paseos diarios son suficientes. Necesita un patio cercado para patrullar.",
+    "cuidado": "Medio. Su grueso doble pelaje es resistente a la suciedad, pero muda mucho. Cepillado semanal."
+  },
+  "n02111889-Samoyed": {
+    "nombre_comun": "Samoyedo",
+    "temperamento": "Amistoso, gentil, adaptable. La sonrisa de Sammy es real; son perros de compañía felices y extrovertidos.",
+    "ejercicio": "Alto. Requiere ejercicio vigoroso diario (más de 2 horas). Le encanta el clima frío y tirar.",
+    "cuidado": "Alto. Su pelaje blanco y espeso muda muchísimo y requiere cepillado frecuente."
+  },
+  "n02112018-Pomeranian": {
+    "nombre_comun": "Pomerania",
+    "temperamento": "Vivaz, audaz, curioso. Un pequeño perro juguete con una gran personalidad de perro grande.",
+    "ejercicio": "Medio. Paseos cortos y juegos en interiores son suficientes. Disfruta del entrenamiento y los trucos.",
+    "cuidado": "Medio. Su esponjoso doble pelaje requiere cepillado varias veces por semana para evitar enredos."
+  },
+  "n02112137-chow": {
+    "nombre_comun": "Chow Chow",
+    "temperamento": "Digno, independiente, reservado. Conocido por su lengua azul-negra y su naturaleza felina. Leal a la familia.",
+    "ejercicio": "Bajo. Paseos diarios moderados son suficientes. Propenso a sobrecalentarse.",
+    "cuidado": "Alto. Su grueso pelaje (áspero o liso) necesita cepillado varias veces por semana."
+  },
+  "n02112350-keeshond": {
+    "nombre_comun": "Keeshond",
+    "temperamento": "Amistoso, vivaz, extrovertido. Un perro de barcaza holandés que es un excelente perro de compañía y guardián.",
+    "ejercicio": "Medio. Paseos diarios y sesiones de juego son suficientes.",
+    "cuidado": "Alto. Su esponjoso doble pelaje necesita cepillado varias veces por semana."
+  },
+  "n02112536-Brabancon_griffon": {
+    "nombre_comun": "Grifón de Bruselas (Variedad Brabançon)",
+    "temperamento": "Alerta, curioso, afectuoso. Un perro toy con una gran personalidad y expresiones faciales humanas.",
+    "ejercicio": "Medio. Juegos en interiores y paseos cortos son suficientes.",
+    "cuidado": "Bajo. La variedad de pelo corto (Brabançon) necesita un aseo mínimo."
+  },
+  "n02112706-miniature_poodle": {
+    "nombre_comun": "Caniche Miniatura",
+    "temperamento": "Inteligente, orgulloso, activo. Una versión más pequeña del Caniche Estándar, igualmente inteligente y entrenable.",
+    "ejercicio": "Alto. Es un perro muy enérgico que necesita caminatas y juegos diarios.",
+    "cuidado": "Muy Alto. Su pelaje rizado que no muda requiere cepillado diario hasta la piel o recortes profesionales cada 4-6 semanas."
+  },
+  "n02113023-standard_poodle": {
+    "nombre_comun": "Caniche Estándar",
+    "temperamento": "Muy inteligente, activo, orgulloso. Es un perro de agua excepcional y un compañero familiar atlético.",
+    "ejercicio": "Alto. Requiere ejercicio vigoroso diario, como nadar, trotar y entrenamiento mental.",
+    "cuidado": "Muy Alto. Su pelaje rizado que no muda requiere cepillado diario hasta la piel o recortes profesionales cada 4-6 semanas."
+  },
+  "n02113186-Mexican_hairless": {
+    "nombre_comun": "Xoloitzcuintli (Perro sin Pelo Mexicano)",
+    "temperamento": "Leal, alerta, tranquilo. Una raza antigua que es un compañero calmado y un excelente perro guardián.",
+    "ejercicio": "Medio. Paseos diarios y sesiones de juego son suficientes.",
+    "cuidado": "Alto (sin pelo). No tiene pelo, pero su piel requiere cuidados, como hidratación y protección solar."
+  },
+  "n02113624-toy_poodle": {
+    "nombre_comun": "Caniche Toy",
+    "temperamento": "Inteligente, confiado, ágil. El más pequeño de los Caniches, es un compañero encantador que aprende rápido.",
+    "ejercicio": "Medio. Paseos diarios y juegos en interiores son suficientes.",
+    "cuidado": "Muy Alto. Su pelaje rizado que no muda requiere cepillado diario o recortes profesionales cada 4-6 semanas."
+  },
+  "n02113712-miniature_poodle": {
+    "nombre_comun": "Caniche Miniatura",
+    "temperamento": "Inteligente, orgulloso, activo. Una versión más pequeña del Caniche Estándar, igualmente inteligente y entrenable.",
+    "ejercicio": "Alto. Es un perro muy enérgico que necesita caminatas y juegos diarios.",
+    "cuidado": "Muy Alto. Su pelaje rizado que no muda requiere cepillado diario hasta la piel o recortes profesionales cada 4-6 semanas."
+  },
+  "n02113799-standard_poodle": {
+    "nombre_comun": "Caniche Estándar",
+    "temperamento": "Muy inteligente, activo, orgulloso. Es un perro de agua excepcional y un compañero familiar atlético.",
+    "ejercicio": "Alto. Requiere ejercicio vigoroso diario, como nadar, trotar y entrenamiento mental.",
+    "cuidado": "Muy Alto. Su pelaje rizado que no muda requiere cepillado diario hasta la piel o recortes profesionales cada 4-6 semanas."
+  },
+  "n02113978-Border_collie": {
+    "nombre_comun": "Border Collie",
+    "temperamento": "Extremadamente inteligente, enérgico, trabajador. Considerada la raza más inteligente, necesita un trabajo mental.",
+    "ejercicio": "Muy Alto. Requiere ejercicio físico intenso y desafíos mentales diarios. No es un perro de apartamento.",
+    "cuidado": "Medio. Su pelaje necesita cepillado semanal."
+  },
+  "n02115641-dingo": {
+    "nombre_comun": "Dingo",
+    "temperamento": "Independiente, cauteloso, inteligente. No es un perro doméstico típico; es reservado con extraños y tiene un fuerte instinto de manada.",
+    "ejercicio": "Muy Alto. Requiere grandes espacios cercados para correr y mucha estimulación mental. No apto para la mayoría de los hogares.",
+    "cuidado": "Bajo. Su pelaje corto se limpia solo en gran medida; necesita cepillado ocasional."
+  },
+  "n02115913-dhole": {
+    "nombre_comun": "Dhole (Perro Salvaje Asiático)",
+    "temperamento": "Salvaje. No es un animal doméstico. Es un cánido social que vive y caza en grandes clanes.",
+    "ejercicio": "N/A (Salvaje)",
+    "cuidado": "N/A (Salvaje). Esta entrada del dataset es para un cánido salvaje, no una mascota."
+  },
+  "n02116738-African_hunting_dog": {
+    "nombre_comun": "Perro Salvaje Africano (Licaón)",
+    "temperamento": "Salvaje. No es un animal doméstico. Es un depredador de manada altamente social y eficiente.",
+    "ejercicio": "N/A (Salvaje)",
+    "cuidado": "N/A (Salvaje). Esta entrada del dataset es para un cánido salvaje, no una mascota."
+  }
+}
