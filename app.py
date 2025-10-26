@@ -5,17 +5,20 @@ import numpy as np
 import json
 from gtts import gTTS
 import io
+import os
+import pandas as pd
 
 # --- Configuración de la Página ---
+# Usamos un ícono de perro 🐾 y forzamos el modo oscuro (dark)
 st.set_page_config(
-    page_title="Dog-ID: Identificador de Razas",
-    page_icon="🐶",
-    layout="wide"
+    page_title="UPAO: Analizador de Razas",
+    page_icon="🐾",
+    layout="wide",
+    initial_sidebar_state="collapsed"
 )
 
 # --- 1. Cargar el Modelo y los Datos ---
 
-# Usamos st.cache_resource para cargar el modelo solo una vez
 @st.cache_resource
 def load_my_model():
     """Carga el modelo Keras entrenado."""
@@ -23,10 +26,9 @@ def load_my_model():
         model = tf.keras.models.load_model('dog_breed_classifier_v2_120_breeds.keras')
         return model
     except Exception as e:
-        st.error(f"Error al cargar el modelo: {e}")
+        st.error(f"Error crítico al cargar el modelo: {e}")
         return None
 
-# Usamos st.cache_data para cargar las recomendaciones solo una vez
 @st.cache_data
 def load_recommendations():
     """Carga el archivo JSON de recomendaciones."""
@@ -35,14 +37,13 @@ def load_recommendations():
             data = json.load(f)
         return data
     except Exception as e:
-        st.error(f"Error al cargar el archivo JSON: {e}")
+        st.error(f"Error crítico al cargar las recomendaciones: {e}")
         return None
 
 model = load_my_model()
 recommendations = load_recommendations()
 
 # Obtenemos la lista de nombres de clases (los IDs) desde las claves del JSON
-# Esto debe coincidir con el orden en que se entrenó el modelo (alfabético)
 if recommendations:
     class_names = list(recommendations.keys())
 else:
@@ -52,101 +53,125 @@ else:
 
 def process_image(pil_image):
     """Convierte una imagen PIL al formato que el modelo necesita."""
-    # Convertir a array de numpy
     img = np.array(pil_image)
-    
-    # Redimensionar la imagen a 224x224
     img_resized = tf.image.resize(img, (224, 224))
-    
-    # Añadir una dimensión de "batch" (lote)
     img_expanded = tf.expand_dims(img_resized, axis=0)
-    
     return img_expanded
 
 def generate_audio(text):
     """Genera un archivo de audio en memoria a partir del texto."""
     try:
-        # Generar el audio en español
         tts = gTTS(text=text, lang='es', slow=False)
-        
-        # Crear un objeto de bytes en memoria para guardar el audio
         audio_fp = io.BytesIO()
         tts.write_to_fp(audio_fp)
-        
-        # Regresar al inicio del archivo en memoria para que st.audio pueda leerlo
         audio_fp.seek(0)
         return audio_fp
     except Exception as e:
         st.error(f"Error al generar el audio: {e}")
         return None
 
-# --- 3. Interfaz de Usuario de Streamlit ---
+# --- 3. Función Principal de la App ---
 
-st.title("🐶 Dog-ID: Identificador de Razas")
-st.write("¡Usa la cámara de tu dispositivo para identificar la raza de tu perro y obtener consejos de cuidado!")
+def main():
+    st.title("UPAO: Analizador de Razas Caninas")
+    st.write("Identifica la raza de tu perro. Usa tu cámara o sube una foto para comenzar.")
 
-# Verificamos si el modelo y los datos se cargaron correctamente
-if model is None or recommendations is None:
-    st.error("La aplicación no se pudo iniciar. Faltan archivos esenciales.")
-else:
-    # El componente de cámara de Streamlit
-    img_file_buffer = st.camera_input("Toma una foto para analizarla:")
+    if model is None or recommendations is None:
+        st.error("La aplicación no puede iniciar. Faltan archivos esenciales.")
+        return
 
-    if img_file_buffer is not None:
-        # El usuario ha tomado una foto
+    # --- PESTAÑAS PARA LA ENTRADA ---
+    tab1, tab2 = st.tabs(["📸 Usar Cámara", "⬆️ Subir Archivo"])
+    img_file = None
+
+    with tab1:
+        st.info("Apunta la cámara de tu dispositivo al perro y toma una foto.")
+        img_file_buffer = st.camera_input("Tomar foto", label_visibility="collapsed")
+        if img_file_buffer:
+            img_file = img_file_buffer
+
+    with tab2:
+        st.info("Sube una foto de tu perro desde tu galería (formatos: .jpg, .jpeg, .png).")
+        img_file_buffer = st.file_uploader("Selecciona una foto", type=["jpg", "jpeg", "png"], label_visibility="collapsed")
+        if img_file_buffer:
+            img_file = img_file_buffer
+
+    # --- Lógica de Procesamiento (se ejecuta si hay una imagen) ---
+    if img_file is not None:
+        pil_image = Image.open(img_file).convert('RGB')
         
-        # 1. Abrir la imagen capturada
-        pil_image = Image.open(img_file_buffer)
-        
-        # 2. Mostrar la imagen al usuario
-        st.image(pil_image, caption="Foto capturada. Analizando...", use_column_width=True)
-
-        # 3. Procesar la imagen y predecir (con un indicador de "cargando")
-        with st.spinner("Analizando la raza... 🧠"):
+        # --- Animación de Carga (SPINNER) ---
+        with st.spinner("Analizando... 🧠"):
             
-            # Procesar la imagen
+            # Procesar la imagen y predecir
             processed_image = process_image(pil_image)
+            prediction = model.predict(processed_image)[0]
             
-            # Hacer la predicción
-            prediction = model.predict(processed_image)
+            # --- TOP 5 PREDICCIONES ---
+            top5_indices = np.argsort(prediction)[-5:][::-1]
+            top5_confidences = prediction[top5_indices]
+            top5_breed_ids = [class_names[i] for i in top5_indices]
             
-            # Obtener la predicción principal
-            pred_index = np.argmax(prediction)
-            pred_confidence = np.max(prediction)
-            
-            # Mapear el índice al ID de la raza
-            breed_id = class_names[pred_index]
-            
-            # Obtener la información de nuestro JSON
-            breed_info = recommendations[breed_id]
-            common_name = breed_info["nombre_comun"]
-            temperament = breed_info["temperamento"]
-            exercise = breed_info["ejercicio"]
-            care = breed_info["cuidado"]
+            # Predicción principal
+            main_breed_id = top5_breed_ids[0]
+            main_confidence = top5_confidences[0]
+            main_breed_info = recommendations[main_breed_id]
+            main_common_name = main_breed_info["nombre_comun"]
 
-        # 4. Mostrar los resultados
-        st.subheader(f"¡Creo que es un... {common_name}!")
-        st.write(f"**Confianza de la predicción:** {pred_confidence * 100:.2f}%")
+        # --- 5. Mostrar Resultados (Layout de 2 Columnas) ---
+        st.subheader(f"¡Análisis Completo! 🎯")
+        st.header(f"Raza Principal: {main_common_name}")
+        st.write(f"*(Confianza de la predicción: {main_confidence * 100:.2f}%)*")
         
-        # Usamos columnas para un mejor diseño
+        st.divider()
+        
         col1, col2 = st.columns(2)
-        
-        with col1:
-            st.subheader("Guía de Cuidados 📋")
-            st.write(f"**Temperamento:** {temperament}")
-            st.write(f"**Ejercicio:** {exercise}")
-            st.write(f"**Cuidado del Pelaje:** {care}")
 
-        # 5. Generar y mostrar el audio
+        with col1:
+            st.image(pil_image, caption="Tu Foto", use_column_width=True)
+            
+            # --- Lógica para mostrar la FOTO DE REFERENCIA ---
+            ref_image_path_jpg = f"breed_images/{main_breed_id}.jpg"
+            ref_image_path_png = f"breed_images/{main_breed_id}.png"
+            
+            if os.path.exists(ref_image_path_jpg):
+                st.image(ref_image_path_jpg, caption=f"Referencia: {main_common_name}", use_column_width=True)
+            elif os.path.exists(ref_image_path_png):
+                st.image(ref_image_path_png, caption=f"Referencia: {main_common_name}", use_column_width=True)
+            else:
+                # Si no completaste el Paso 1, mostrará este aviso
+                st.warning(f"No se encontró foto de referencia para {main_common_name}.")
+
         with col2:
-            st.subheader("Escuchar Recomendación 🔊")
-            with st.spinner("Generando audio..."):
-                # Crear el texto para el audio
-                audio_text = f"Recomendaciones para un {common_name}. Temperamento: {temperament}. Ejercicio: {exercise}. Cuidado del pelaje: {care}."
+            # --- GRÁFICO DE BARRAS TOP 5 ---
+            st.subheader("📊 Gráfico de Similitud (Top 5)")
+            
+            top5_data = {
+                "Raza": [recommendations[bid]["nombre_comun"] for bid in top5_breed_ids],
+                "Confianza": [conf * 100 for conf in top5_confidences]
+            }
+            chart_data = pd.DataFrame(top5_data)
+            
+            st.bar_chart(chart_data, x="Raza", y="Confianza")
+            
+            # --- Información de Cuidado (EXPANDER) ---
+            with st.expander("📋 Ver Guía de Cuidados y Audio", expanded=True):
+                st.write(f"**Temperamento:** {main_breed_info['temperamento']}")
+                st.write(f"**Ejercicio:** {main_breed_info['ejercicio']}")
+                st.write(f"**Cuidado del Pelaje:** {main_breed_info['cuidado']}")
                 
-                # Generar el archivo de audio en memoria
-                audio_file = generate_audio(audio_text)
+                st.divider()
+                st.subheader("🔊 Audio-Recomendación")
                 
-                if audio_file:
-                    # Mostrar el reproductor de audio
-                    st.audio(audio_file, format='audio/mp3')
+                with st.spinner("Generando audio..."):
+                    audio_text = f"Recomendaciones para un {main_common_name}. Temperamento: {main_breed_info['temperamento']}. Ejercicio: {main_breed_info['ejercicio']}."
+                    audio_file = generate_audio(audio_text)
+                    if audio_file:
+                        st.audio(audio_file, format='audio/mp3')
+
+# --- Ejecutar la app ---
+if __name__ == "__main__":
+    if model and recommendations:
+        main()
+    else:
+        st.error("La aplicación no se puede iniciar. Revisa los archivos del modelo y JSON.")
