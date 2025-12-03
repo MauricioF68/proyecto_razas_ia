@@ -1,6 +1,3 @@
-¡Claro que sí\! Un buen `README.md` es la carta de presentación de tu proyecto. Es lo primero que verá tu profesor o cualquier reclutador que entre a tu GitHub.
-
-He preparado un `README` profesional, estructurado y formateado en Markdown, que incluye todos los aspectos técnicos y funcionales que hemos implementado (incluyendo las últimas mejoras como el audio, el filtro de confianza y las fotos de referencia).
 
 **Instrucciones:**
 
