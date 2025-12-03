@@ -97,7 +97,99 @@ def main():
             img_file = img_file_buffer
 
     # --- Lógica de Procesamiento (se ejecuta si hay una imagen) ---
+    # ... (código anterior igual) ...
+
+    # --- Lógica de Procesamiento ---
     if img_file is not None:
+        pil_image = Image.open(img_file).convert('RGB')
+        
+        with st.spinner("Analizando... 🧠"):
+            
+            # Procesar la imagen y predecir
+            processed_image = process_image(pil_image)
+            prediction = model.predict(processed_image)[0]
+            
+            # Obtener la confianza más alta
+            max_confidence = np.max(prediction)
+            
+            # --- FILTRO DE SEGURIDAD (UMBRAL) ---
+            # Si la confianza es menor al 40% (0.40), probablemente no sea un perro
+            UMBRAL_CONFIANZA = 0.40 
+
+            if max_confidence < UMBRAL_CONFIANZA:
+                st.error("⚠️ No hemos podido identificar un perro en esta imagen.")
+                st.write(f"El sistema tiene una confianza muy baja ({max_confidence*100:.2f}%).")
+                st.info("Por favor, asegúrate de subir una foto clara de un perro.")
+                
+                # Mostramos la imagen subida de todos modos para que el usuario vea qué falló
+                st.image(pil_image, caption="Imagen analizada", width=300)
+                
+            else:
+                # --- SI ES UN PERRO (Confianza > 40%) ---
+                # Aquí va todo el código que ya tenías para mostrar resultados
+                
+                top5_indices = np.argsort(prediction)[-5:][::-1]
+                top5_confidences = prediction[top5_indices]
+                top5_breed_ids = [class_names[i] for i in top5_indices]
+                
+                # Predicción principal
+                main_breed_id = top5_breed_ids[0]
+                main_breed_info = recommendations[main_breed_id]
+                main_common_name = main_breed_info["nombre_comun"]
+
+                # --- 5. Mostrar Resultados ---
+                st.subheader(f"¡Análisis Completo! 🎯")
+                st.header(f"Raza Principal: {main_common_name}")
+                
+                # (El resto del código de columnas, gráficos y audio sigue igual aquí abajo...)
+                # ...
+                
+                # Para facilitarte la vida, te pego el bloque COMPLETO del 'else' aquí abajo
+                # para que puedas copiar y reemplazar todo desde 'if max_confidence < UMBRAL...'
+                
+                st.write(f"*(Confianza de la predicción: {max_confidence * 100:.2f}%)*")
+                
+                st.divider()
+                
+                col1, col2 = st.columns(2)
+
+                with col1:
+                    st.image(pil_image, caption="Tu Foto", use_column_width=True)
+                    
+                    ref_image_path_jpg = f"breed_images/{main_breed_id}.jpg"
+                    ref_image_path_png = f"breed_images/{main_breed_id}.png"
+                    
+                    if os.path.exists(ref_image_path_jpg):
+                        st.image(ref_image_path_jpg, caption=f"Referencia: {main_common_name}", use_column_width=True)
+                    elif os.path.exists(ref_image_path_png):
+                        st.image(ref_image_path_png, caption=f"Referencia: {main_common_name}", use_column_width=True)
+                    else:
+                        st.warning(f"No se encontró foto de referencia para {main_common_name}.")
+
+                with col2:
+                    st.subheader("📊 Gráfico de Similitud (Top 5)")
+                    
+                    top5_data = {
+                        "Raza": [recommendations[bid]["nombre_comun"] for bid in top5_breed_ids],
+                        "Confianza": [conf * 100 for conf in top5_confidences]
+                    }
+                    chart_data = pd.DataFrame(top5_data)
+                    
+                    st.bar_chart(chart_data, x="Raza", y="Confianza")
+                    
+                    with st.expander("📋 Ver Guía de Cuidados y Audio", expanded=True):
+                        st.write(f"**Temperamento:** {main_breed_info['temperamento']}")
+                        st.write(f"**Ejercicio:** {main_breed_info['ejercicio']}")
+                        st.write(f"**Cuidado del Pelaje:** {main_breed_info['cuidado']}")
+                        
+                        st.divider()
+                        st.subheader("🔊 Audio-Recomendación")
+                        
+                        with st.spinner("Generando audio..."):
+                            audio_text = f"Recomendaciones para un {main_common_name}. Temperamento: {main_breed_info['temperamento']}. Ejercicio: {main_breed_info['ejercicio']}."
+                            audio_file = generate_audio(audio_text)
+                            if audio_file:
+                                st.audio(audio_file, format='audio/mp3')
         pil_image = Image.open(img_file).convert('RGB')
         
         # --- Animación de Carga (SPINNER) ---
