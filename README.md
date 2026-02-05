@@ -8,32 +8,32 @@
 -----
 
 ````markdown
-# 🐶 Dog-ID: Identificador de Razas Caninas con IA
+# Identificador de Razas Caninas con IA
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.31-red)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-**Dog-ID** es una aplicación web interactiva basada en Inteligencia Artificial capaz de identificar **120 razas de perros** a partir de imágenes. Utiliza una Red Neuronal Convolucional (CNN) optimizada para ofrecer predicciones rápidas y precisas, proporcionando además recomendaciones de cuidado y reproducción de audio para accesibilidad.
+***Aplicación web interactiva basada en Inteligencia Artificial capaz de identificar **120 razas de perros** a partir de imágenes. Utiliza una Red Neuronal Convolucional (CNN) optimizada para ofrecer predicciones rápidas y precisas, proporcionando además recomendaciones de cuidado y reproducción de audio para accesibilidad.
 
 🔗 **[Ver Demo en Vivo](https://share.streamlit.io/)** *(Pega aquí tu link de Streamlit cuando lo tengas)*
 
 ---
 
-## ✨ Características Principales
+## Características Principales
 
-* 📸 **Detección en Tiempo Real:** Usa la cámara de tu dispositivo o sube una imagen desde tu galería.
-* 🧠 **Clasificación Inteligente:** Identifica entre 120 razas distintas utilizando el dataset de Stanford.
-* 📊 **Análisis Detallado:** Muestra las **Top 5 razas más probables** con un gráfico de confianza.
-* 🛡️ **Filtro de Seguridad:** Detecta si la imagen subida no es un perro (umbral de confianza < 40%).
-* 🖼️ **Comparación Visual:** Muestra una foto de referencia de la raza detectada junto a tu foto para validar el resultado.
-* 🔊 **Audio-Guía:** Genera recomendaciones de cuidado habladas (Text-to-Speech) usando `gTTS`.
-* 📋 **Información de Cuidado:** Proporciona datos sobre temperamento, ejercicio y cuidado del pelaje.
+*  **Detección en Tiempo Real:** Usa la cámara de tu dispositivo o sube una imagen desde tu galería.
+*  **Clasificación Inteligente:** Identifica entre 120 razas distintas utilizando el dataset de Stanford.
+*  **Análisis Detallado:** Muestra las **Top 5 razas más probables** con un gráfico de confianza.
+*  **Filtro de Seguridad:** Detecta si la imagen subida no es un perro (umbral de confianza < 40%).
+*  **Comparación Visual:** Muestra una foto de referencia de la raza detectada junto a tu foto para validar el resultado.
+*  **Audio-Guía:** Genera recomendaciones de cuidado habladas (Text-to-Speech) usando `gTTS`.
+*  **Información de Cuidado:** Proporciona datos sobre temperamento, ejercicio y cuidado del pelaje.
 
 ---
 
-## 🛠️ Stack Tecnológico
+##  Stack Tecnológico
 
 * **Lenguaje:** Python 3
 * **Deep Learning:** TensorFlow / Keras
@@ -45,7 +45,7 @@
 
 ---
 
-## 🧠 Arquitectura del Modelo
+##  Arquitectura del Modelo
 
 El núcleo del proyecto es una **Red Neuronal Convolucional (CNN)** basada en la arquitectura **MobileNetV2**.
 
@@ -56,7 +56,7 @@ El núcleo del proyecto es una **Red Neuronal Convolucional (CNN)** basada en la
 
 ---
 
-## 📂 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```text
 dog_id_project/
@@ -72,7 +72,7 @@ dog_id_project/
 
 -----
 
-## 🚀 Instalación y Uso Local
+##  Instalación y Uso Local
 
 Sigue estos pasos para ejecutar el proyecto en tu computadora:
 
@@ -107,7 +107,7 @@ Sigue estos pasos para ejecutar el proyecto en tu computadora:
 
 -----
 
-## 📊 Dataset
+##  Dataset
 
 El modelo fue entrenado utilizando el **[Stanford Dogs Dataset](https://www.kaggle.com/datasets/jessicali9530/stanford-dogs-dataset)**.
 
